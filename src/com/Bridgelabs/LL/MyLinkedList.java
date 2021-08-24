@@ -19,6 +19,18 @@ public class MyLinkedList {
 
 	}
 	
+	public void append(INode myNode) {
+		if (head == null) {
+			head = myNode;
+		}
+		if (tail == null) {
+			tail = myNode;
+		} else {
+
+			tail.setNext(myNode);
+			tail = myNode;
+		}
+	}
 	public void print() {
 		INode tempNode = head;
 		while (tempNode != null) {

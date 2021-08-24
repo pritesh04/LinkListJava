@@ -7,10 +7,13 @@ public class MyNodeRunner {
 		MyNode<Integer> secNode = new MyNode<Integer>(30);
 		MyNode<Integer> firstNode = new MyNode<Integer>(70);
 		MyLinkedList linkedList = new MyLinkedList();
-		linkedList.add(firstNode);
-		linkedList.add(secNode);
-		linkedList.add(thirdNode);
+//		linkedList.add(firstNode);
+//		linkedList.add(secNode);
+//		linkedList.add(thirdNode);
 		
+		linkedList.append(firstNode);
+		linkedList.append(secNode);
+		linkedList.append(thirdNode);
 		linkedList.print();
 
 	}
