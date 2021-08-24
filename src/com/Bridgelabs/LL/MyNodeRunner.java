@@ -13,6 +13,7 @@ public class MyNodeRunner {
 		linkedList.insertSpecific(thirdNode, inBetween);
 		
 		linkedList.deleteLastElement();
+		linkedList.search(inBetween);
 		linkedList.print();
 
 	}

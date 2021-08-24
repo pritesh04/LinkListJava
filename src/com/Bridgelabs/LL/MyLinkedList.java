@@ -61,6 +61,24 @@ public class MyLinkedList {
 		t2 = null;
 
 	}
+	public <K> void search(K key) {
+		INode t1 = head;
+		boolean flag = false;
+		while (t1 != null) {
+			if (t1.getkey() == key) {
+				flag = true;
+				break;
+			}
+			t1 = t1.getNext();
+
+		}
+		if (flag) {
+			System.out.println(" Key found");
+		} else {
+			System.out.println("key not found");
+		}
+
+	}
 
 	public void print() {
 		INode tempNode = head;
