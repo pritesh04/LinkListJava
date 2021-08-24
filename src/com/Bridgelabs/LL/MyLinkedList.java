@@ -79,6 +79,17 @@ public class MyLinkedList {
 		}
 
 	}
+	public void deleteInBetween(INode y) {
+		INode temp, t = null;
+		temp = head;
+		while ( !temp.equals(y)) {
+			t=temp;
+			temp = temp.getNext();
+		}
+		t.setNext(temp.getNext());
+		//System.out.println("Deleted  " + temp.getNext());
+		temp=null;
+	}
 
 	public void print() {
 		INode tempNode = head;
