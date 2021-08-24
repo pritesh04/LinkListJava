@@ -11,6 +11,8 @@ public class MyNodeRunner {
 		linkedList.add(firstNode);
 		linkedList.add(thirdNode);
 		linkedList.insertSpecific(thirdNode, inBetween);
+		
+		linkedList.deleteFirstElement();
 		linkedList.print();
 
 	}

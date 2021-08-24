@@ -42,6 +42,15 @@ public class MyLinkedList {
 		temp.setNext(newNode);
 
 	}
+	public void deleteFirstElement() {
+
+		INode tempNode = null;
+		tempNode = head;
+		head = head.getNext();
+		System.out.println("deleted " + tempNode.getkey());
+		tempNode = null;
+
+	}
 
 	public void print() {
 		INode tempNode = head;
