@@ -12,7 +12,7 @@ public class MyNodeRunner {
 		linkedList.add(thirdNode);
 		linkedList.insertSpecific(thirdNode, inBetween);
 		
-		linkedList.deleteFirstElement();
+		linkedList.deleteLastElement();
 		linkedList.print();
 
 	}

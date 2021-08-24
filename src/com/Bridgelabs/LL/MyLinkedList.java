@@ -51,6 +51,16 @@ public class MyLinkedList {
 		tempNode = null;
 
 	}
+	public void deleteLastElement() {
+		INode t1 = head, t2 = head;
+		while (t2 != tail) {
+			t1 = t2;
+			t2 = t2.getNext();
+		}
+		tail=t1;
+		t2 = null;
+
+	}
 
 	public void print() {
 		INode tempNode = head;
