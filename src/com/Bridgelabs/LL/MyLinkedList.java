@@ -4,7 +4,7 @@ public class MyLinkedList {
 
 	private INode head;
 	private INode tail;
-	
+
 	public void add(INode myNode) {
 		if (tail == null) {
 			tail = myNode;
@@ -18,7 +18,7 @@ public class MyLinkedList {
 		}
 
 	}
-	
+
 	public void append(INode myNode) {
 		if (head == null) {
 			head = myNode;
@@ -31,6 +31,18 @@ public class MyLinkedList {
 			tail = myNode;
 		}
 	}
+
+	public void insertSpecific(INode old, INode newNode) {
+		INode temp = head, t = head;
+		while (!temp.equals(old)) {
+			t = temp;
+			temp = temp.getNext();
+		}
+		newNode.setNext(temp.getNext());
+		temp.setNext(newNode);
+
+	}
+
 	public void print() {
 		INode tempNode = head;
 		while (tempNode != null) {
@@ -39,12 +51,9 @@ public class MyLinkedList {
 				System.out.print("->");
 			}
 			tempNode = tempNode.getNext();
-			
+
 		}
 
 	}
-	
 
 }
-
-
